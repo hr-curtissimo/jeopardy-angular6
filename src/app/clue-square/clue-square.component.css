@@ -1,0 +1,8 @@
+:host {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-color: cyan;
+  font-size: 3em;
+  text-align: center;
+}

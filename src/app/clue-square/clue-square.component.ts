@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-clue-square',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clue-square.component.css']
 })
 export class ClueSquareComponent implements OnInit {
+
+  @Input() public clue;
 
   constructor() { }
 

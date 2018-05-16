@@ -5,11 +5,13 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ClueSquareComponent } from './clue-square/clue-square.component';
+import { ClueColumnComponent } from './clue-column/clue-column.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ClueSquareComponent
+    ClueSquareComponent,
+    ClueColumnComponent
   ],
   imports: [
     BrowserModule,
