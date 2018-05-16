@@ -1,0 +1,5 @@
+button[disabled] {
+  background-color: purple;
+  color: white;
+  cursor: none;
+}
