@@ -1,3 +1,5 @@
+<app-clue-square></app-clue-square>
+
 <button (click)="loadClue()">I don't know. Go get another.</button>
 <div>
   Category: {{ clue?.category?.title }}
@@ -6,6 +8,6 @@
   Answer: {{ clue.question }}
 </div>
 <div>
-  Question: <input type="text">
+  Question: <input type="text" [(ngModel)]="answer">
 </div>
 <div><button>What is?</button></div>

@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http'
 export class AppComponent {
   // private http: HttpClient;
   clue = {};
+  answer = 'You do not know';
 
   constructor(private http: HttpClient) {
     // this.http = http;
