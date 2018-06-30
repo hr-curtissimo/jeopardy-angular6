@@ -1,3 +1,5 @@
-<p>
-  clue-column works!
-</p>
+<div>
+  <div>{{ category?.title }}</div>
+  <app-clue-square *ngFor="let clue of category.clues"
+                   [clue]="clue"></app-clue-square>
+</div>

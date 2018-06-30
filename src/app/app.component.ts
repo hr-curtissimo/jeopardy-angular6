@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http'
 export class AppComponent {
   // private http: HttpClient;
   clue = {};
+  category = {};
   answer = 'You do not know';
 
   constructor(private http: HttpClient) {
@@ -16,7 +17,22 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.loadClue();
+    this.loadCategory();
+  }
+
+  loadCategory() {
+    this.http
+      .get<Array<any>>('http://jservice.io/api/clues?category=21')
+      .subscribe(clues => {
+        clues = clues.filter(c => c.value)
+                  .slice(0, 5);
+
+        this.category = {
+          title: clues[0].category.title,
+          // clues: clues
+          clues
+        };
+      });
   }
 
   loadClue() {

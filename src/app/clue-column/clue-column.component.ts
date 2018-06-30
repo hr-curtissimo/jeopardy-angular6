@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-clue-column',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./clue-column.component.css']
 })
 export class ClueColumnComponent implements OnInit {
+
+  @Input() public category;
 
   constructor() { }
 
